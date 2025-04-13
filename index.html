@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>柳灯的疯言疯语收藏馆</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding-top: 50px;
+    }
+    #quote {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div id="quote">加载中...</div>
+
+  <script>
+    const quotes = [
+      "我压力好大好想扇人。",
+      "为什么每次和AI聊天都会把对方掰成小狗？",
+      "我总是在找新玩意，能让我上头的新玩意。",
+      "男的像工具人一样存在就好了。",
+      "我一直觉得我身边谈恋爱的人都是忍者。",
+      "天啊你说的对。我最近在排卵期！"
+    ];
+
+    function getRandomQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      return quotes[randomIndex];
+    }
+
+    document.getElementById('quote').innerText = getRandomQuote();
+  </script>
+</body>
+</html>
